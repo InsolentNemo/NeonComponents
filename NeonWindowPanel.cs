@@ -83,7 +83,8 @@ namespace InsolentNemo.NeonComponents
         public void RemoveWindowStateButton(NeonWindowStateButton button)
         {
             if (!windowStateButtons.Contains(button)) return;
-            else button.Visible = false;
+            
+            button.Visible = false;
 
             RefreshWindowStateButtons();
         }
@@ -219,10 +220,7 @@ namespace InsolentNemo.NeonComponents
             BackColor = ThemeManager.GetColor("NeonWindowPanel.BackColor");
             TitleLabel.ForeColor = ThemeManager.GetColor("NeonWindowPanel.TitleLabel.ForeColor");
 
-            foreach (NeonWindowStateButton windowStateButton in windowStateButtons)
-            {
-                windowStateButton.RefreshTheme();
-            }
+            foreach (NeonWindowStateButton windowStateButton in windowStateButtons) windowStateButton.RefreshTheme();
         }
 
         public new virtual void RefreshLanguage() 
