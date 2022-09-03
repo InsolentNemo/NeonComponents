@@ -1,7 +1,7 @@
 
 # NeonComponents
 
-This library was made for creating some fancy visual components in C# based on the .NET Framework 4.7.2.
+This library was made for creating some fancy visual components in C# based on the .NET Framework 4.8.
 NeonComponents supports theme and language management by using .resx resource files as individual interface.
 
 
